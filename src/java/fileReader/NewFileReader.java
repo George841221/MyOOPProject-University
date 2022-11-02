@@ -9,13 +9,14 @@ public class NewFileReader {
 
     public static void readFile() throws FileNotFoundException {
 
-    File file = new File(filePath);
-    Scanner scanFile = new Scanner(file);
+        File file = new File(filePath);
+        Scanner scanFile = new Scanner(file);
 
-    while(scanFile.hasNextLine()){
-        String data = scanFile.nextLine();
-        System.out.println(data);
-    }
+            while(scanFile.hasNextLine()){
+                String data = scanFile.nextLine();
+                System.out.println(data);
+            }
+            scanFile.close();
     }
 
 
